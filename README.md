@@ -1,1 +1,2 @@
-# architectstory.github.io
+# this is a architectstory's blog
+## architetstory.github.io
