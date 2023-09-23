@@ -1,6 +1,40 @@
-# main links
-main:
-  # - title: "microservice architecture"
-  #   url: /microservice/
-  # - title: "hoony.com"
-  #   url: https://hoony.com
+# main links - Menu
+#main:
+#  - title: "Portfolio"
+#    sublinks:
+#      - title: "Books"
+#        url: /java-microservice/
+
+  - title: "Tech blog"
+    sublinks:
+      - title: "MSA"
+        url: /authentication/
+#      - title: "jekyll"
+#        url: /jekyll/
+
+# sidebar links
+books:
+  - title: "hoony's books"
+    children:
+      - title: "microservice"
+        url: /java-microservice/
+      - title: "s/w engineering"
+        url: /software-engineering/
+      - title: "ethereum"
+        url: /ethereum/
+
+# sidebar links
+architecture:
+  - title: "MSA"
+    children:
+      - title: "authentication"
+        url: /authentication/
+      - title: "saga"
+        url: /saga/
+
+jekyll:
+  - title: "jekyll"
+    children:
+      - title: "jekyll"
+        url: /jekyll/
+
