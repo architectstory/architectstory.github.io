@@ -1,34 +1,47 @@
 # main links - Menu
-#main:
-#  - title: "Portfolio"
-#    sublinks:
-#      - title: "Books"
-#        url: /java-microservice/
+main:
+  - title: "Portfolio"
+    sublinks:
+      - title: "Books"
+        url: /java-microservice/
+      - title: "Research"
+        url: /microservice-framework/
 
   - title: "Tech blog"
     sublinks:
       - title: "MSA"
-        url: /authentication/
+        url: /tenant/
 #      - title: "jekyll"
 #        url: /jekyll/
 
 # sidebar links
 books:
-  - title: "hoony's books"
+  - title: "Books"
     children:
-      - title: "microservice"
+      - title: "java microservice"
         url: /java-microservice/
-      - title: "s/w engineering"
+      - title: "software engineering"
         url: /software-engineering/
-      - title: "ethereum"
-        url: /ethereum/
+      - title: "mastering ethereum"
+        url: /masteringethereum/
 
 # sidebar links
-architecture:
+research:
+  - title: "Research"
+    children:
+      - title: "microservice framework"
+        url: /microservice-framework/
+      - title: "stock analytics"
+        url: /stock-analytics/
+      - title: "data quality"
+        url: /data-quality/
+
+# sidebar links
+msa:
   - title: "MSA"
     children:
-      - title: "authentication"
-        url: /authentication/
+      - title: "tenant"
+        url: /tenant/
       - title: "saga"
         url: /saga/
 
