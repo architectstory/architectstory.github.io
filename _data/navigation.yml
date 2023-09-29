@@ -10,7 +10,7 @@ main:
   - title: "Tech blog"
     sublinks:
       - title: "MSA"
-        url: /tenant/
+        url: /authentication/
 #      - title: "jekyll"
 #        url: /jekyll/
 
@@ -42,6 +42,8 @@ msa:
     children:
       - title: "tenant"
         url: /tenant/
+      - title: "authentication"
+        url: /authentication/
       - title: "saga"
         url: /saga/
 
