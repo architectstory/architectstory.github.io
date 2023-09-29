@@ -104,26 +104,25 @@ Refresh Token 을 이용하여 재 발급 받는다.
 엑세스 토큰이 탈취 시 시스템의 피해를 최소화 할 수 있다.
 
 # 4. OAuth (Open Authorization)
-다양한 플랫폼에서 권한 부여를 위한 산업 표준 프로토콜
+앞서 설명한 Access Token 과 Refresh Token 을 발급하고 사용하는 프로토콜(프로세스)에 대해서 알아보자.  
+OAuth 는 다양한 플랫폼에서 권한 부여(Token 방식)를 위한 산업 표준 프로토콜
 타사의 사이트에 대한 접근 권한을 얻고, 그 권한을 이용하여 개발할 수 있도록 도와주는 프레임워크
 
-Oauth 등장 이전에는 내가 만들려는 시스템에서 다른 시스템의 리소스를 가져오기 위해서는
+OAuth 등장 이전에는 내가 만들려는 시스템에서 다른 시스템의 리소스를 가져오기 위해서는
 다른 시스템에서 사용하는 Id 와 Password 를 직접 입력을 받아서(내 시스템에 저장해 두고)
-필요할 때마다 저장해둔 Id/Password 를 이용하여 다른 시스템을 호출하여 사용했다.
+필요할 때마다 Id/Password 를 이용해서 다른 시스템을 호출하였다.
 
-이와 같은 방법은 내가 만들려는 시스템에서 다른 시스템에서 사용하는 Id/Password 를 관리해야 하는 보안적인 문제가 발생한다.
+이와 같은 방법은 내가 만들려는 시스템에서 다른 시스템에 등록된 Id/Password 를 받아서 관리해야하는  보안 문제가 발생한다.
 
-예를 들면,
-난 hoony.com 시스템을 만들고, google drive를 연결해서 서비스를 하려고 한다면
-google drive에 접속할 수 있어야 한다.
-이때 google drive의 Id/Password 를 hoony.com 시스템에
-google drive 에서 사용하는 Id/Password 를 저장해 두어야 한다.
-나 혼자 사용하는 hoony.com 이면 문제가 없겠지만, 다른 사용자들이 이용하기 위해 hoony.com 에 모든 사용자의 인증정보를
-담아 둘 수 없다.
+예를 들면, 난 hoony.com 시스템을 만드는 사람이고, google drive를 연결해서 hoony.com에서 서비스를 하려고 한다면
+hoony.com -> google drive에 접속할 수 있어야 한다.
+이때 google drive에 등록된 Id/Password 를 hoony.com 시스템에 저장해 두어야 한다.
+나 혼자 hoony.com를 사용하면 문제가 없겠지만, 다른 사용자들이 hoony.com을 이용하기 위해서는 hoony.com은  
+각 사용자들의 google drive Id/Password를 모두 가지고 있어야 한다.
 
-결국, hoony.com -> google.com (drive) 를 사용하기 위한 인증과 특정 리소스(drive)에 Access 하기 위한 권한을
-획득하는 절차가 필요하다. 바로 이 과정에서 사용하는 Access 인증 방식으로 Token 을 이용하고,
-Access Token 을 발급받기 위한 일련의ㅣ 과정을 인터페이스로 정의 해둔 것이 OAuth 이다.
+결국, <u>hoony.com -> google.com (drive) 를 사용하기 위한 인증과 특정 리소스(drive)에 Access 하기 위한 권한을
+획득하는 절차가 필요하다. 바로 이러한 문제를 해결하기 위해서 인증/인가를 Access Token 으로 대체하고,
+이를 발급하기 위한 일련의 과정을 인터페이스로 정의해 둔 것이 OAuth 이다.</u>
 
 ![microservice](/assets/images/authentication/authentication_oauth.png)
 
@@ -132,4 +131,10 @@ Access Token 을 발급받기 위한 일련의ㅣ 과정을 인터페이스로 �
 1. Client 는 부여받은 권한으로 Authorization Server(권한 서버)에 Access Token 을 요청한다.
 1. Authorization Server(권한 서버)에서 Client 와 부여 받은 권한에 대한 유효성을 검사 후 통과하면 Access Token 을 부여한다.
 1. Client 는 받아온 엑세스 토큰을 이용하여 Resource Owner 의 Resource 에 접근을 요청한다.
-1. Resource Server(자원 서버)는 해당 엑세스 토큰의 유효성을 검사한 후 통과하면 요청에 대한 Resource 를 Client 에 넘겨준다.
+1. Resource Server(자원 서버)는 해당 엑세스 토큰의 유효성을 검사한 후 통과하면 요청에 대한 Resource 를 Client 에 넘겨준다.  
+
+자세한 내용은 아래의 링크 사이트 참고 
+
+[OAuth2.0](https://inpa.tistory.com/entry/WEB-%F0%9F%93%9A-OAuth-20-%EA%B0%9C%EB%85%90-%F0%9F%92%AF-%EC%A0%95%EB%A6%AC){:target="_blank"}
+
+# 4. OAuth (Open Authorization)
