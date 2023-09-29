@@ -104,6 +104,7 @@ Refresh Token 을 이용하여 재 발급 받는다.
 엑세스 토큰이 탈취 시 시스템의 피해를 최소화 할 수 있다.
 
 # 4. OAuth (Open Authorization)
+### 1) OAuth 개념
 앞서 설명한 Access Token 과 Refresh Token 을 발급하고 사용하는 프로토콜(프로세스)에 대해서 알아보자.  
 OAuth 는 다양한 플랫폼에서 권한 부여(Token 방식)를 위한 산업 표준 프로토콜
 타사의 사이트에 대한 접근 권한을 얻고, 그 권한을 이용하여 개발할 수 있도록 도와주는 프레임워크
@@ -120,8 +121,8 @@ hoony.com -> google drive에 접속할 수 있어야 한다.
 나 혼자 hoony.com를 사용하면 문제가 없겠지만, 다른 사용자들이 hoony.com을 이용하기 위해서는 hoony.com은  
 각 사용자들의 google drive Id/Password를 모두 가지고 있어야 한다.
 
-결국, <u>hoony.com -> google.com (drive) 를 사용하기 위한 인증과 특정 리소스(drive)에 Access 하기 위한 권한을
-획득하는 절차가 필요하다. 바로 이러한 문제를 해결하기 위해서 인증/인가를 Access Token 으로 대체하고,
+결국, <u>hoony.com -> google.com (drive) 를 사용하기 위한 특정 리소스(drive)에 Access 하기 위한 권한을
+획득하는 절차가 필요하다. 바로 이러한 문제를 해결하기 위해서 권한을 Access Token 으로 대체하고,
 이를 발급하기 위한 일련의 과정을 인터페이스로 정의해 둔 것이 OAuth 이다.</u>
 
 ![microservice](/assets/images/authentication/authentication_oauth.png)
@@ -133,8 +134,41 @@ hoony.com -> google drive에 접속할 수 있어야 한다.
 1. Client 는 받아온 엑세스 토큰을 이용하여 Resource Owner 의 Resource 에 접근을 요청한다.
 1. Resource Server(자원 서버)는 해당 엑세스 토큰의 유효성을 검사한 후 통과하면 요청에 대한 Resource 를 Client 에 넘겨준다.  
 
+### 2) OAuth 주요 특징
+
 자세한 내용은 아래의 링크 사이트 참고 
 
 [OAuth2.0](https://inpa.tistory.com/entry/WEB-%F0%9F%93%9A-OAuth-20-%EA%B0%9C%EB%85%90-%F0%9F%92%AF-%EC%A0%95%EB%A6%AC){:target="_blank"}
 
-# 4. OAuth (Open Authorization)
+### 3) OAuth Access Token 발급 방식
+
+OAuth2.0 은 4가지 Access Token 발급 방식을 제공한다.  
+
+- Authorization Code Grant  
+<u>User(브라우저) 가 Access Token 에 관여하지 않는 방법이다.</u>
+보안성을 높이기 위한 이상적인 방법이다.
+![OAuth2.0](/assets/images/authentication/oauth_authorization_code_grant.png)  
+출처 https://m.blog.naver.com/mds_datasecurity/222182943542
+
+- Implicit Grant  
+<u>Authorization Code 없이 바로 Access Token 이 발급하는 방식이다.</u>
+자격증명을 안전하게 저장하기 어려운 클라이언트 (JavaScript등의 스크립트 언어를 사용한 브라우저)에게 
+최적화된 방식이다.  
+Access Token 이 바로 전달 되므로 만료기간을 짧게 설정하여 누출의 위험을 줄일 필요가 있다.    
+![OAuth2.0](/assets/images/authentication/oauth_implicit_grant.png)  
+출처 https://m.blog.naver.com/mds_datasecurity/222182943542
+
+- Client Credential Grant  
+클라이언트의 자격증명만으로 Access Token을 획득하는 방식  
+![OAuth2.0](/assets/images/authentication/oauth_client_credentials_grant_type.png)  
+출처 https://m.blog.naver.com/mds_datasecurity/222182943542
+
+- Resource Owner Password Credential Grant  
+username, password 로 Access Token 을 받는 방식   
+![OAuth2.0](/assets/images/authentication/oauth_resource_owner_password_credentials_grant.png)  
+출처 https://m.blog.naver.com/mds_datasecurity/222182943542
+
+# 5. Open ID Connect
+OAuth2.0 이 권한 부여를 위한 프로토콜인 반면, Open ID Connect 는 OAuth2.0 기반 위에 인증 부분을 확장한 프로토콜이다.
+
+[Open ID Connect](https://www.samsungsds.com/kr/insights/oidc.html){:target="_blank"}
