@@ -149,7 +149,8 @@ OAuth2.0 은 4가지 Access Token 발급 방식을 제공한다.
 
 - Authorization Code Grant  
 <u>User(브라우저) 가 Access Token 에 관여하지 않는 방법이다.</u>
-보안성을 높이기 위한 이상적인 방법이다.
+브라우저에서는 단지 Authrization Code만 알고 있고, Access Token 은 백앤드 서비스에서만 관리하고
+통신하므로 보안성을 높이기 위한 이상적인 방법이다.
 ![OAuth2.0](/assets/images/authentication/oauth_authorization_code_grant.png)  
 출처 https://m.blog.naver.com/mds_datasecurity/222182943542
 
