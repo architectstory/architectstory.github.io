@@ -5,24 +5,27 @@ sidebar:
 
 # Microservice Authentication
 
-# 1. 개요
+Microservice Authentication 매커니즘을 이해하기 전에
+인증에 대한 전반적인 개념부터 정리하고 가자.
 
-### 1) 개념
+# 1. 인증 개요
+
+### 1) 접근통제와 인증
 
 ![microservice](/assets/images/authentication/authentication_define.png)
 출처 https://peimsam.tistory.com/267
 
-### 2) 분류
+### 2) 인증 유형의 분류
 
 ![microservice](/assets/images/authentication/authentication_user.png)
 출처 https://peimsam.tistory.com/267
 
-### 3) 주요특징
+### 3) 인증 유형 별 주요특징
 
 ![microservice](/assets/images/authentication/authentication_type.png)
 출처 https://peimsam.tistory.com/267
 
-# 2. 방식
+# 2. 소유 기반 Token 방식
 
 시스템에서 사용자 인증을 위한 소유기반 인증방식 중 Session(세션) 방식과 Token(토큰)방식에 대해서 알아보자.
 
@@ -158,17 +161,61 @@ Access Token 이 바로 전달 되므로 만료기간을 짧게 설정하여 누
 ![OAuth2.0](/assets/images/authentication/oauth_implicit_grant.png)  
 출처 https://m.blog.naver.com/mds_datasecurity/222182943542
 
-- Client Credential Grant  
-클라이언트의 자격증명만으로 Access Token을 획득하는 방식  
+- Client Credential Grant  (권장하지 않음)
+  클라이언트의 자격증명만으로 Access Token을 획득하는 방식  
 ![OAuth2.0](/assets/images/authentication/oauth_client_credentials_grant_type.png)  
 출처 https://m.blog.naver.com/mds_datasecurity/222182943542
 
-- Resource Owner Password Credential Grant  
+- Resource Owner Password Credential Grant  (권장하지 않음) 
 username, password 로 Access Token 을 받는 방식   
 ![OAuth2.0](/assets/images/authentication/oauth_resource_owner_password_credentials_grant.png)  
 출처 https://m.blog.naver.com/mds_datasecurity/222182943542
 
-# 5. Open ID Connect
-OAuth2.0 이 권한 부여를 위한 프로토콜인 반면, Open ID Connect 는 OAuth2.0 기반 위에 인증 부분을 확장한 프로토콜이다.
+# 5. OpenID Connect
+OAuth2.0  이 권한 부여를 위한 프로토콜인 반면, Open ID Connect 는 OAuth2.0 기반 위에 인증 부분을 확장한 프로토콜이다.
 
-[Open ID Connect](https://www.samsungsds.com/kr/insights/oidc.html){:target="_blank"}
+![openid connect](/assets/images/authentication/open_id_connect.png)  
+OAuth 가 리소스 권한부여를 위한 엑세스 토큰을 제공하는 반면, 
+OpenID Connect 는 클라이언트가 사용자를 판단할 수 있게 해준다. 
+Authorization Server 에 서버에 사용자 로그인과 동의를 요청할 때, Scope=openid 로 명시해야 한다.  
+
+먼저 간략하게 개념부터 알아보고, 좀 더 자세하게 사례를 통해 알아보자
+[OpenID Connect](https://www.samsungsds.com/kr/insights/oidc.html){:target="_blank"}
+
+구글 [OAuth2.0 Playgroud](https://developers.google.com/oauthplayground/){:target="_blank"} 에서 
+테스트 해 보자
+
+![openid connect](/assets/images/authentication/google_oauth2_open_id_1.png)
+
+OAuth2.0 Spec.에서 Authorization Code 방식으로 구글 로그인을 통해 Authrorization Code 를 얻어왔고, 이를 
+브라우저에서 인식하고 있다. 구글로 부터 받은 Authorization Code 를 전송하여 Access Token 과 Refresh Token 을 
+발급할 것이다.
+
+![openid connect](/assets/images/authentication/google_oauth2_open_id_2.png)
+
+앞서 구글 로그인을 통해 부여받은(사용자 브라우저에서 저장한) Authorization Code 를 구글 Authorization로 송신해서
+Access Token 과 Refresh Token 을 얻는다.
+
+구글 Authorization Server 는 Token 부여 방식으로 앞서 설명한 OAuth 4가지 방식 중 "Authorization Code Grant"을 사용한다.
+'grant_type=authorization_code' 송신 헤더의 내용을 통해 확인 할 수 있다.
+부여 받은 Token 정보는 아래와 같다.  
+
+![openid connect](/assets/images/authentication/google_oauth2_open_id_3.png)    
+
+access_token, id_token(JWT), refresh_token 등의 정보이다.
+'scope=openid' 를 통해 openid 형식으로 발급되었음을 알수 있다.
+
+OpenID 인 id_token 을 JWT Decoder를 통해 Decoding 해서 보자.
+
+![openid connect](/assets/images/authentication/google_oauth2_open_id_4.png)  
+
+위 그림 좌측의 Encoded 된 JWT Token 은 '.' 으로 Header.Payload.Signature 구분하여 구성한다. 
+HEADER 에서는 Signature Signing 알고리즘 종류와 지원하는 라이브러리에 따라 
+HS264, HS384, HS512 RSA264, RSA384, RSA512 등 지정 가능하다.
+
+부여 받은 Access Token 을 이용해서 구글 Resource Server에서 사용자 정보를 조회해 보자.
+![openid connect](/assets/images/authentication/google_oauth2_open_id_5.png)
+위 그림 우측 상단에 표시된 것처럼 Http 송신 시 Access Token 을 전송하였다.
+위 그림 우측 하단의 표시된 것처럼 'id : 115913577187327990177' 를 수신 한 것을 확인 할 수 있다.
+해당 ID는 'id_token'를 Decode 한 'Payload' 에서(JWT Decode)결과의 'Payload'의 
+'sub: 115913577187327990177' 과 동일함을 알 수 있다.
