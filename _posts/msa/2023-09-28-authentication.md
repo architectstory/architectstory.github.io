@@ -216,7 +216,7 @@ HS264, HS384, HS512 RSA264, RSA384, RSA512 등 지정 가능하다.
 
 부여 받은 Access Token 을 이용해서 구글 Resource Server에서 사용자 정보를 조회해 보자.
 ![openid connect](/assets/images/authentication/google_oauth2_open_id_5.png)
-위 그림 우측 상단에 표시된 것처럼 Http 송신 시 Access Token 을 전송하였다.
-위 그림 우측 하단의 표시된 것처럼 'id : 115913577187327990177' 를 수신 한 것을 확인 할 수 있다.
-해당 ID는 'id_token'를 Decode 한 'Payload' 에서(JWT Decode)결과의 'Payload'의 
-'sub: 115913577187327990177' 과 동일함을 알 수 있다.
+위 그림 우측 상단에 표시된 것처럼 Http 송신 시 Access Token 을 전송하였다.     
+위 그림 우측 하단의 표시된 것처럼 'id : 115913577187327990177' 를 수신 한 것을 확인 할 수 있다.   
+<u>Resource Server로 부터 확인한 User ID는 'id_token(JWT)'에 포함된 id(payload의 sub)와 동일한 값임을 알수 있다.     
+'id: 115913577187327990177'='sub: 115913577187327990177'</u>
