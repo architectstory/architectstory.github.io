@@ -1,18 +1,25 @@
 # main links - Menu
 main:
-  - title: "Portfolio"
-    sublinks:
-      - title: "Books"
-        url: /java-microservice/
-      - title: "Research"
-        url: /microservice-framework/
-
   - title: "Tech blog"
     sublinks:
       - title: "MSA"
         url: /authentication/
 #      - title: "jekyll"
 #        url: /jekyll/
+  - title: "Portfolio"
+    sublinks:
+      - title: "microservice"
+        url: /java-microservice/
+      - title: "software engineering"
+        url: /software-engineering/
+      - title: "ethereum"
+        url: /masteringethereum/
+      - title: "msa framework"
+        url: /microservice-framework/
+      - title: "stock analytics"
+        url: /stock-analytics/
+      - title: "data quality"
+        url: /data-quality/
 
 # sidebar links
 books:
