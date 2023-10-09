@@ -15,10 +15,10 @@ main:
         url: /microservice-framework/
       - title: "stock re-ballancing strategy"
         url: /stock-re-ballancing-strategy/
-      - title: "stock analytics tool"
-        url: /stock-analytics-tool/
       - title: "stock web crawling"
         url: /stock-web-crawlling/
+      - title: "stock analytics tool"
+        url: /stock-analytics-tool/
       - title: "data quality"
         url: /data-quality/
 
@@ -62,13 +62,12 @@ interest:
         url: /microservice-framework/
       - title: "stock re-ballancing strategy"
         url: /stock-re-ballancing-strategy/
-      - title: "stock analytics tool"
-        url: /stock-analytics-tool/
       - title: "stock web crawling"
         url: /stock-web-crawlling/
+      - title: "stock analytics tool"
+        url: /stock-analytics-tool/
       - title: "data quality"
         url: /data-quality/
-
 
 jekyll:
   - title: "jekyll"
