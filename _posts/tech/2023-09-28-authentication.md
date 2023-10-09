@@ -1,6 +1,6 @@
 ---
 sidebar:
-  nav: "msa"
+  nav: "tech"
 ---
 
 # Microservice Authentication

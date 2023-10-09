@@ -1,12 +1,28 @@
 # main links - Menu
 main:
-  - title: "Tech blog"
+  - title: "Tech"
     sublinks:
-      - title: "MSA"
+      - title: "msa authentication"
         url: /authentication/
-#      - title: "jekyll"
-#        url: /jekyll/
-  - title: "Portfolio"
+      - title: "msa saga"
+        url: /saga/
+      - title: "msa tenant"
+        url: /tenant/
+
+  - title: "Interest"
+    sublinks:
+      - title: "msa framework"
+        url: /microservice-framework/
+      - title: "stock re-ballancing strategy"
+        url: /stock-re-ballancing-strategy/
+      - title: "stock analytics tool"
+        url: /stock-analytics-tool/
+      - title: "stock web crawling"
+        url: /stock-web-crawlling/
+      - title: "data quality"
+        url: /data-quality/
+
+  - title: "Books"
     sublinks:
       - title: "microservice"
         url: /java-microservice/
@@ -14,12 +30,18 @@ main:
         url: /software-engineering/
       - title: "ethereum"
         url: /masteringethereum/
-      - title: "msa framework"
-        url: /microservice-framework/
-      - title: "stock analytics"
-        url: /stock-analytics/
-      - title: "data quality"
-        url: /data-quality/
+
+
+# sidebar links
+tech:
+  - title: "Tech"
+    children:
+      - title: "msa authentication"
+        url: /authentication/
+      - title: "msa saga"
+        url: /saga/
+      - title: "msa tenant"
+        url: /tenant/
 
 # sidebar links
 books:
@@ -33,26 +55,20 @@ books:
         url: /masteringethereum/
 
 # sidebar links
-research:
-  - title: "Research"
+interest:
+  - title: "Interest"
     children:
       - title: "microservice framework"
         url: /microservice-framework/
-      - title: "stock analytics"
-        url: /stock-analytics/
+      - title: "stock re-ballancing strategy"
+        url: /stock-re-ballancing-strategy/
+      - title: "stock analytics tool"
+        url: /stock-analytics-tool/
+      - title: "stock web crawling"
+        url: /stock-web-crawlling/
       - title: "data quality"
         url: /data-quality/
 
-# sidebar links
-msa:
-  - title: "MSA"
-    children:
-      - title: "tenant"
-        url: /tenant/
-      - title: "authentication"
-        url: /authentication/
-      - title: "saga"
-        url: /saga/
 
 jekyll:
   - title: "jekyll"
