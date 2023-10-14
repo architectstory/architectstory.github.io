@@ -10,8 +10,8 @@ sidebar:
 The technique of investing while balancing cash and stocks in the same ratio (5:5),
 the 3V strategies (Volumn, Value, View)
 - Value Analytics
-- View Analytics
 - Volumn Analytics
+- View Analytics
 
 ## 1. Value Analytics
 
@@ -70,18 +70,7 @@ BPS: 상수 (최근 분기 또는 전년말 확정치)
 EPS: 변수 (애널리스트 예측치 또는 최근 4분기 합계)
 DPS: 준상수 (최근 3년치 평균 또는 전년도 주당 배당금액)
 
-## 2. View Analytics
-[트랜드](https://trends.google.co.kr/trends/){:target="_blank"} + 실현속도
-
-- [사업구조](https://finance.daum.net/domestic/all_stocks){:target="_blank"}
-- [지배구조](https://finance.daum.net/domestic/all_stocks){:target="_blank"}
-  지주회사(순수지주회사, 사업지주회사), 순환출자(X)
-  순수지주회사: 자회사 지분만 보유하고 관리
-  사업지주회사: 자기사업을 하면서 자회사 지분을 보유
-- [재무구조](https://finance.daum.net/domestic/all_stocks){:target="_blank"}
-  [재무 건전성 확인](dart.fss.or.kr){:target="_blank"} , [증권사 리포트 확인](https://finance.naver.com/research/){:target="_blank"}
-
-## 3. Volumn Analytics
+## 2. Volumn Analytics
 
 패턴 + 포지션
 차트는 캔들과 거래량 막대만으로 충분
@@ -97,3 +86,32 @@ DPS: 준상수 (최근 3년치 평균 또는 전년도 주당 배당금액)
   포지션의 진위여부를 파악하기 위해'트레이딩 비율'과 '순매수 비율'을 알아야 한다.
   순매수 비율 < 10% : 1점, 순매수 비율 < 10~20% : 2점, 순매수 비율 > 30% : 3점
   <u>거래원(증권사) 확인</u>, 개인이 선호하는 증권사인지 등 확인
+
+## 3. View Analytics
+[트랜드](https://trends.google.co.kr/trends/){:target="_blank"} + 실현속도
+
+- [사업구조](https://finance.daum.net/domestic/all_stocks){:target="_blank"}
+- [지배구조](https://finance.daum.net/domestic/all_stocks){:target="_blank"}
+  지주회사(순수지주회사, 사업지주회사), 순환출자(X)
+  순수지주회사: 자회사 지분만 보유하고 관리
+  사업지주회사: 자기사업을 하면서 자회사 지분을 보유
+- [재무구조](https://finance.daum.net/domestic/all_stocks){:target="_blank"}
+  [재무 건전성 확인](dart.fss.or.kr){:target="_blank"} , [증권사 리포트 확인](https://finance.naver.com/research/){:target="_blank"}
+
+## How to
+- 주문순서
+  1. 가격이 비싸고 주가 변동이 빠른 종목
+  1. 가격이 싸고 주가 변동이 빠른 종목
+  1. 가격이 비싸고 주가 변동이 느린 종목
+  1. 가격이 사고 주가 변동이 느린 종목
+- 우상향 주가 파악
+  - '스스로 가치가 있는가?'
+  - '그 가치가 점점 더 성장하는가?'
+- 승률 vs 수익률
+  - 가치투자 승률은 최소 60% 이상되어야 한다.
+  - <u>매매자에게는 승률 보다는 수익률이 더 중요</u>
+- '72의 법칙'을 이용한 투자 수익률 계산법
+  - 72/이자율%=년수 : 원금의 이자율% 라면 2배가 되는데 걸리는 년수
+    72/6%=12년
+  - 예) 1천만이 2천만원 되는게 걸리는 2년을 목표로 한다면
+    72/x=2 -> 72/2=36% -> 즉 년 수익률 36%
