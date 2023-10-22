@@ -2,15 +2,17 @@
 main:
   - title: "Tech"
     sublinks:
-      - title: "msa authentication"
+      - title: "Gartner Top 10 Strategic Tech. Trend 2024"
+        url: /Gartner-Top10-Strategic-Technology-Trend-2024/
+      - title: "MSA authentication"
         url: /authentication/
-      - title: "msa saga"
+      - title: "MSA saga"
         url: /saga/
-      - title: "msa tenant"
+      - title: "MSA tenant"
         url: /tenant/
-      - title: "msa framework"
+      - title: "MSA framework"
         url: /microservice-framework/
-      - title: "data quality"
+      - title: "Data Quality"
         url: /data-quality/
 
   - title: "Stock"
@@ -38,15 +40,17 @@ main:
 tech:
   - title: "Tech"
     children:
-      - title: "msa authentication"
+      - title: "Gartner Top 10 Strategic Tech. Trend 2024"
+        url: /Gartner-Top10-Strategic-Technology-Trend-2024/
+      - title: "MSA authentication"
         url: /authentication/
-      - title: "msa saga"
+      - title: "MSA saga"
         url: /saga/
-      - title: "msa tenant"
+      - title: "MSA tenant"
         url: /tenant/
-      - title: "microservice framework"
+      - title: "MSA framework"
         url: /microservice-framework/
-      - title: "data quality"
+      - title: "Data Quality"
         url: /data-quality/
 
 # sidebar links
