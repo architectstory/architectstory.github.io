@@ -7,13 +7,15 @@ sidebar:
 책 내용을 정리하였다.
 
 # Invest Strategy
-The technique of investing while balancing cash and stocks in the same ratio (5:5),
-the 3V strategies (Volumn, Value, View)
-- Value Analytics
-- Volumn Analytics
-- View Analytics
+<u>The technique of investing while balancing cash and stocks in the same ratio (5:5),
+the 3V strategies (Volumn, Value, View)</u>
+- Stock (5) : (5) Cash
+- Stock
+  - Value Analytics (적정주가분석, 우량종목선정)
+  - Volume Analytics (패턴, 포지션, 캔들과 거래량)
+  - View Analytics (트랜드, 실현속도)
 
-## 1. Value Analytics
+## 1. Stock Value Analytics
 
 적정주가분석 + 우량종목선별
 
@@ -70,7 +72,7 @@ BPS: 상수 (최근 분기 또는 전년말 확정치)
 EPS: 변수 (애널리스트 예측치 또는 최근 4분기 합계)
 DPS: 준상수 (최근 3년치 평균 또는 전년도 주당 배당금액)
 
-## 2. Volumn Analytics
+## 2. Stock Volume Analytics
 
 패턴 + 포지션
 차트는 캔들과 거래량 막대만으로 충분
@@ -87,7 +89,7 @@ DPS: 준상수 (최근 3년치 평균 또는 전년도 주당 배당금액)
   순매수 비율 < 10% : 1점, 순매수 비율 < 10~20% : 2점, 순매수 비율 > 30% : 3점
   <u>거래원(증권사) 확인</u>, 개인이 선호하는 증권사인지 등 확인
 
-## 3. View Analytics
+## 3. Stock View Analytics
 [트랜드](https://trends.google.co.kr/trends/){:target="_blank"} + 실현속도
 
 - [사업구조](https://finance.daum.net/domestic/all_stocks){:target="_blank"}

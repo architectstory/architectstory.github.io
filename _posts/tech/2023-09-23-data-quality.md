@@ -1,6 +1,6 @@
 ---
 sidebar:
-  nav: "interest"
+  nav: "tech"
 ---
 
 [data quality management]()

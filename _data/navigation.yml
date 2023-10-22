@@ -8,19 +8,21 @@ main:
         url: /saga/
       - title: "msa tenant"
         url: /tenant/
-
-  - title: "Interest"
-    sublinks:
       - title: "msa framework"
         url: /microservice-framework/
-      - title: "stock re-ballancing strategy"
+      - title: "data quality"
+        url: /data-quality/
+
+  - title: "Stock"
+    sublinks:
+      - title: "stock reballancing strategy"
         url: /stock-re-ballancing-strategy/
+      - title: "stock option"
+        url: /stock-option/
       - title: "stock web crawling"
         url: /stock-web-crawlling/
       - title: "stock analytics tool"
         url: /stock-analytics-tool/
-      - title: "data quality"
-        url: /data-quality/
 
   - title: "Books"
     sublinks:
@@ -42,6 +44,10 @@ tech:
         url: /saga/
       - title: "msa tenant"
         url: /tenant/
+      - title: "microservice framework"
+        url: /microservice-framework/
+      - title: "data quality"
+        url: /data-quality/
 
 # sidebar links
 books:
@@ -55,19 +61,17 @@ books:
         url: /masteringethereum/
 
 # sidebar links
-interest:
-  - title: "Interest"
+stock:
+  - title: "Stock"
     children:
-      - title: "microservice framework"
-        url: /microservice-framework/
-      - title: "stock re-ballancing strategy"
+      - title: "stock re ballancing strategy"
         url: /stock-re-ballancing-strategy/
+      - title: "stock option"
+        url: /stock-option/
       - title: "stock web crawling"
         url: /stock-web-crawlling/
       - title: "stock analytics tool"
         url: /stock-analytics-tool/
-      - title: "data quality"
-        url: /data-quality/
 
 jekyll:
   - title: "jekyll"
