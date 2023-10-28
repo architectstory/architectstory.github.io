@@ -19,6 +19,8 @@ main:
     sublinks:
       - title: "stock reballancing strategy"
         url: /stock-re-ballancing-strategy/
+      - title: "stock analysis based on GDP"
+        url: /stock-analysis-based-on-GDP/
       - title: "stock option"
         url: /stock-option/
       - title: "stock web crawling"
@@ -70,6 +72,8 @@ stock:
     children:
       - title: "stock re ballancing strategy"
         url: /stock-re-ballancing-strategy/
+      - title: "stock analysis based on GDP"
+        url: /stock-analysis-based-on-GDP/
       - title: "stock option"
         url: /stock-option/
       - title: "stock web crawling"
