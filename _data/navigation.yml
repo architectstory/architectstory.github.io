@@ -2,12 +2,14 @@
 main:
   - title: "Tech"
     sublinks:
-      - title: "Clean architecture"
-        url: /clean-architecture/
+      - title: "CNCF"
+        url: /CNCF/
+      - title: "Java21 Virtual Thread"
+        url: /java21-virtual-thread/
+#      - title: "Clean architecture"
+#        url: /clean-architecture/
       - title: "Gartner Top 10 Strategic Tech. Trend 2024"
         url: /Gartner-Top10-Strategic-Technology-Trend-2024/
-      - title: "cloud native with spring boot 3"
-        url: /cloud-native-with-spring-boot-3/
       - title: "MSA authentication"
         url: /authentication/
       - title: "MSA saga"
@@ -46,12 +48,14 @@ main:
 tech:
   - title: "Tech"
     children:
-      - title: "Clean architecture"
-        url: /clean-architecture/
+      - title: "CNCF"
+        url: /CNCF/
+      - title: "Java21 Virtual Thread"
+        url: /java21-virtual-thread/
+#      - title: "Clean architecture"
+#        url: /clean-architecture/
       - title: "Gartner Top 10 Strategic Tech. Trend 2024"
         url: /Gartner-Top10-Strategic-Technology-Trend-2024/
-      - title: "cloud native with spring boot 3"
-        url: /cloud-native-with-spring-boot-3/
       - title: "MSA authentication"
         url: /authentication/
       - title: "MSA saga"
