@@ -2,6 +2,8 @@
 main:
   - title: "Tech"
     sublinks:
+      - title: "Clean architecture"
+        url: /clean-architecture/
       - title: "Gartner Top 10 Strategic Tech. Trend 2024"
         url: /Gartner-Top10-Strategic-Technology-Trend-2024/
       - title: "MSA authentication"
@@ -42,6 +44,8 @@ main:
 tech:
   - title: "Tech"
     children:
+      - title: "Clean architecture"
+        url: /clean-architecture/
       - title: "Gartner Top 10 Strategic Tech. Trend 2024"
         url: /Gartner-Top10-Strategic-Technology-Trend-2024/
       - title: "MSA authentication"
