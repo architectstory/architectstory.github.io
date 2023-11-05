@@ -4,6 +4,8 @@ main:
     sublinks:
       - title: "Gartner Top 10 Strategic Tech. Trend 2024"
         url: /Gartner-Top10-Strategic-Technology-Trend-2024/
+      - title: "cloud native with spring boot 3"
+        url: /cloud-native-with-spring-boot-3/
       - title: "MSA authentication"
         url: /authentication/
       - title: "MSA saga"
@@ -44,6 +46,8 @@ tech:
     children:
       - title: "Gartner Top 10 Strategic Tech. Trend 2024"
         url: /Gartner-Top10-Strategic-Technology-Trend-2024/
+      - title: "cloud native with spring boot 3"
+        url: /cloud-native-with-spring-boot-3/
       - title: "MSA authentication"
         url: /authentication/
       - title: "MSA saga"
