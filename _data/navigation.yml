@@ -1,4 +1,4 @@
-# main links - Menu
+# top links - Menu
 main:
   - title: "Tech"
     sublinks:
@@ -23,6 +23,8 @@ main:
 
   - title: "Stock"
     sublinks:
+      - title: "stock analytics AI"
+        url: /stock-analytics-AI/
       - title: "stock reballancing strategy"
         url: /stock-re-ballancing-strategy/
       - title: "stock analysis based on GDP"
@@ -82,6 +84,8 @@ books:
 stock:
   - title: "Stock"
     children:
+      - title: "stock analytics AI"
+        url: /stock-analytics-AI/
       - title: "stock re ballancing strategy"
         url: /stock-re-ballancing-strategy/
       - title: "stock analysis based on GDP"

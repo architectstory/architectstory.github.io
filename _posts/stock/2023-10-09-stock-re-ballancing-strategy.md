@@ -1,6 +1,6 @@
 ---
 sidebar:
-  nav: "interest"
+  nav: "stock"
 ---
 
 ##### 이하 내용은 '동일비중 포트폴리오 전략으로 가치투자하라.'

@@ -1,6 +1,6 @@
 ---
 sidebar:
-  nav: "interest"
+  nav: "stock"
 ---
 
 [stock-analytics]()
