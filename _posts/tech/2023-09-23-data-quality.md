@@ -11,3 +11,5 @@ The data quality tool is a tool that identifies data that violates data standard
 
 [download guide](/assets/images/dataquality/zimage_dq.pdf){:target="_blank"}
 
+
+
