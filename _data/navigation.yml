@@ -2,8 +2,8 @@
 main:
   - title: "Tech"
     sublinks:
-      - title: "AutoGPT"
-        url: /auto-gpt/
+      - title: "AI"
+        url: /AI/    
       - title: "CNCF"
         url: /CNCF/
       - title: "Java21 Virtual Thread"
@@ -50,8 +50,8 @@ main:
 tech:
   - title: "Tech"
     children:
-      - title: "AutoGPT"
-        url: /auto-gpt/
+      - title: "AI"
+        url: /AI/  
       - title: "CNCF"
         url: /CNCF/
       - title: "Java21 Virtual Thread"
