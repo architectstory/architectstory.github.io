@@ -1,40 +1,34 @@
 # top links - Menu
 main:
-  - title: "Tech"
-    sublinks:
-      - title: "CNCF"
-        url: /CNCF/
-      - title: "Java21 Virtual Thread"
-        url: /java21-virtual-thread/
+#  - title: "Tech"
+#    sublinks:
+#      - title: "CNCF"
+#        url: /CNCF/
+#      - title: "Java21 Virtual Thread"
+#        url: /java21-virtual-thread/
 #      - title: "Clean architecture"
 #        url: /clean-architecture/
-      - title: "Gartner Top 10 Strategic Tech. Trend 2024"
-        url: /Gartner-Top10-Strategic-Technology-Trend-2024/
-      - title: "MSA authentication"
-        url: /authentication/
-      - title: "MSA saga"
-        url: /saga/
-      - title: "MSA tenant"
-        url: /tenant/
-      - title: "MSA framework"
-        url: /microservice-framework/
-      - title: "Data Quality"
-        url: /data-quality/
+#      - title: "Gartner Top 10 Strategic Tech. Trend 2024"
+#        url: /Gartner-Top10-Strategic-Technology-Trend-2024/
+#      - title: "MSA authentication"
+#        url: /authentication/
+#      - title: "MSA saga"
+#        url: /saga/
+#      - title: "MSA tenant"
+#        url: /tenant/
+#      - title: "MSA framework"
+#        url: /microservice-framework/
+#      - title: "Data Quality"
+#        url: /data-quality/
 
-  - title: "Stock"
-    sublinks:
-      - title: "stock analytics AI"
-        url: /stock-analytics-AI/
-      - title: "stock reballancing strategy"
-        url: /stock-re-ballancing-strategy/
-      - title: "stock analysis based on GDP"
-        url: /stock-analysis-based-on-GDP/
-      - title: "stock option"
-        url: /stock-option/
-      - title: "stock web crawling"
-        url: /stock-web-crawlling/
-      - title: "stock analytics tool"
-        url: /stock-analytics-tool/
+#  - title: "Stock"
+#    sublinks:
+#      - title: "stock reballancing strategy"
+#        url: /stock-re-ballancing-strategy/
+#      - title: "stock analysis based on GDP"
+#        url: /stock-analysis-based-on-GDP/
+#      - title: "stock option"
+#        url: /stock-option/
 
   - title: "Books"
     sublinks:
@@ -47,27 +41,27 @@ main:
 
 
 # sidebar links
-tech:
-  - title: "Tech"
-    children:
-      - title: "CNCF"
-        url: /CNCF/
-      - title: "Java21 Virtual Thread"
-        url: /java21-virtual-thread/
+#tech:
+#  - title: "Tech"
+#    children:
+#      - title: "CNCF"
+#        url: /CNCF/
+#      - title: "Java21 Virtual Thread"
+#        url: /java21-virtual-thread/
 #      - title: "Clean architecture"
 #        url: /clean-architecture/
-      - title: "Gartner Top 10 Strategic Tech. Trend 2024"
-        url: /Gartner-Top10-Strategic-Technology-Trend-2024/
-      - title: "MSA authentication"
-        url: /authentication/
-      - title: "MSA saga"
-        url: /saga/
-      - title: "MSA tenant"
-        url: /tenant/
-      - title: "MSA framework"
-        url: /microservice-framework/
-      - title: "Data Quality"
-        url: /data-quality/
+#      - title: "Gartner Top 10 Strategic Tech. Trend 2024"
+#        url: /Gartner-Top10-Strategic-Technology-Trend-2024/
+#      - title: "MSA authentication"
+#        url: /authentication/
+#      - title: "MSA saga"
+#        url: /saga/
+#      - title: "MSA tenant"
+#        url: /tenant/
+#      - title: "MSA framework"
+#        url: /microservice-framework/
+#      - title: "Data Quality"
+#        url: /data-quality/
 
 # sidebar links
 books:
@@ -81,21 +75,15 @@ books:
         url: /masteringethereum/
 
 # sidebar links
-stock:
-  - title: "Stock"
-    children:
-      - title: "stock analytics AI"
-        url: /stock-analytics-AI/
-      - title: "stock re ballancing strategy"
-        url: /stock-re-ballancing-strategy/
-      - title: "stock analysis based on GDP"
-        url: /stock-analysis-based-on-GDP/
-      - title: "stock option"
-        url: /stock-option/
-      - title: "stock web crawling"
-        url: /stock-web-crawlling/
-      - title: "stock analytics tool"
-        url: /stock-analytics-tool/
+#stock:
+#  - title: "Stock"
+#    children:
+#      - title: "stock re ballancing strategy"
+#        url: /stock-re-ballancing-strategy/
+#      - title: "stock analysis based on GDP"
+#        url: /stock-analysis-based-on-GDP/
+#      - title: "stock option"
+#        url: /stock-option/
 
 jekyll:
   - title: "jekyll"
