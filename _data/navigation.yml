@@ -1,9 +1,15 @@
 # top links - Menu
 main:
-#  - title: "Tech"
-#    sublinks:
-#      - title: "CNCF"
-#        url: /CNCF/
+  - title: "Tech"
+    sublinks:
+      - title: "AI Agent"
+        url: /AI-Agent/
+      - title: "Agentic AI"
+        url: /Agentic-AI/
+      - title: "Cloud Native"
+        url: /Cloud-Native/
+      - title: "Opensource for Cloud Native"
+        url: /Opensource-for-Cloud-Native/
 #      - title: "Java21 Virtual Thread"
 #        url: /java21-virtual-thread/
 #      - title: "Clean architecture"
@@ -38,14 +44,22 @@ main:
         url: /software-engineering/
       - title: "ethereum"
         url: /masteringethereum/
+      - title: "ITPE"
+        url: /ITPE/
 
 
 # sidebar links
-#tech:
-#  - title: "Tech"
-#    children:
-#      - title: "CNCF"
-#        url: /CNCF/
+tech:
+  - title: "Tech"
+    children:
+      - title: "AI Agent"
+        url: /AI-Agent/
+      - title: "Agentic AI"
+        url: /Agentic-AI/
+      - title: "Cloud Native"
+        url: /Cloud-Native/
+      - title: "Opensource for Cloud Native"
+        url: /Opensource-for-Cloud-Native/
 #      - title: "Java21 Virtual Thread"
 #        url: /java21-virtual-thread/
 #      - title: "Clean architecture"
@@ -73,6 +87,9 @@ books:
         url: /software-engineering/
       - title: "mastering ethereum"
         url: /masteringethereum/
+      - title: "ITPE"
+        url: /ITPE/
+
 
 # sidebar links
 #stock:

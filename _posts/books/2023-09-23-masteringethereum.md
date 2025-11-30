@@ -3,7 +3,7 @@ sidebar:
   nav: "books"
 ---
 
-[mastering ethereum](https://www.yes24.com/Product/Goods/73165236){:target="_blank"}
+[책 소개 바로가기 - yes24](https://www.yes24.com/Product/Goods/73165236){: target="_blank"}
 
 This book provide everything you want to know about building smart contracts and DApps on Ethereum blockchains.
 
